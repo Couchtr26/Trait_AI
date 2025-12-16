@@ -1,0 +1,11 @@
+<h1>Your AI Companion</h1>
+
+<% @messages.each do |msg| %>
+  <p><strong>You:</strong> <%= msg.body %></p>
+  <p><strong>AI:</strong> <%= msg.ai_response %></p>
+<% end %>
+
+<%= form_with url: chat_send_message_path do %>
+  <%= text_field_tag :body %>
+  <%= submit_tag "Send" %>
+<% end %>

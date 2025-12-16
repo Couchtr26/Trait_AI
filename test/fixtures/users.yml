@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  password_digest: MyString
+  cooldown_until: 2025-11-24 20:14:40
+  empathy: 1
+  logic: 1
+  curiosity: 1
+  humor: 1
+  calmness: 1
+
+two:
+  email: MyString
+  password_digest: MyString
+  cooldown_until: 2025-11-24 20:14:40
+  empathy: 1
+  logic: 1
+  curiosity: 1
+  humor: 1
+  calmness: 1
