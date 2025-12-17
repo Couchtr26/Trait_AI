@@ -64,5 +64,6 @@ Future Improvements
 Integration with external NLP services for more advanced AI capabilities.
 Analytics dashboard to track conversation trends and user engagement.
 Enhanced front-end experience with React or Stimulus.js for richer interactions.
+
 License
-MIT License © [Your Name]
+MIT License © Thomas Couch
