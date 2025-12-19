@@ -11,6 +11,63 @@ User Accounts: Supports signup, login, and personalized user sessions.
 Secure Authentication: Protects user data with industry-standard authentication practices.
 Responsive Interface: Clean, intuitive UI for seamless interactions across devices.
 
+Hard Problems Solved
+
+Persistent AI memory
+
+  * Conversation memory is stored per authenticated user
+  * Memory persists across sessions and influences future responses
+
+Memory poisoning prevention
+
+  * Rejects trivial, low-signal, or unsafe inputs from being stored
+  * Prevents deliberate manipulation of AI traits via spam or abuse
+
+Content moderation with enforcement
+
+  * Adult / unsafe language detection
+  * Warning system for violations
+  * Automatic cooldown periods that temporarily block interaction
+
+Adaptive personality system
+
+  * AI traits evolve gradually over time
+  * Prevents sudden or extreme personality shifts
+  * Trait changes are tied to sustained interaction patterns
+
+State isolation
+
+  * Each user’s memory, traits, and moderation status are fully isolated
+  * No cross-user contamination or shared behavioral state
+
+How It Works (High Level)
+
+* Rails controllers manage conversation flow and user state
+* Service objects handle:
+
+  * moderation checks
+  * memory persistence
+  * trait updates
+* Models store long-term memory, traits, and cooldown state
+* AI responses are generated using:
+
+  * stored memory
+  * current trait values
+  * moderation and cooldown status
+
+Example Interaction
+
+1. User submits adult or unsafe language
+2. Input is rejected and not written to memory
+3. Warning is issued to the user
+4. After repeated violations, a cooldown period is enforced
+5. When interaction resumes:
+
+   * prior memory is intact
+   * personality traits persist
+   * no degradation from rejected inputs
+
+
 Technologies
 
 Backend: Ruby on Rails
