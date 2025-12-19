@@ -1,6 +1,7 @@
 Trait_AI
 
-Trait_AI is an advanced AI chatbot built with Ruby on Rails that combines memory, dynamic emotional responses, and user account management to deliver a personalized conversational experience.
+Trait_AI is a Rails-based conversational AI system with persistent, user-specific memory, adaptive personality traits, and built-in content moderation.
+Unlike stateless chatbots, Trait_AI maintains long-term behavioral state per authenticated user while actively preventing memory poisoning, abusive input, and uncontrolled personality drift through input filtering, warnings, and enforced cooldowns
 
 Features
 
